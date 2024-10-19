@@ -4,211 +4,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
     <title>Liz Planejados</title>
 </head>
 
 <body>
 
-    <main>
-        <header>
-            <img src="./img/logo.jpeg" alt="logo" class="logo">
-            <nav>
-                <a href="#section-1">HOME</a>
-                <a href="#section-2">SOBRE NÓS</a>
-                <a href="#section-3">SERVIÇOS</a>
-                <a href="#section-7">CONTATO</a>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#inicio"><img src="./img/logo.png" alt="logo"></a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#sobre">SOBRE NÓS</a></a></li>
+                    <li> <a href="#servicos">SERVIÇOS</a></li>
+                    <li> <a href="#projetos">PROJETOS</a></li>
+                </ul>
             </nav>
-        </header>
-        <section id="section-1">
-            <div class="container-info">
-                <div class="container-text">
-                    <h1 class="title-banner">Liz Planejados</h1>
-                    <p class="text-principal">Transforme seu espaço em ambientes funcionais e personalizados com nossos
-                        móveis planejados.</p>
-                    <a href="#section-3"><button id="bt-nossos-servicos">Conheça nossos serviços</button></a>
-                    <a href="#section-7"><button id="bt-entre-contato">Entre em contato</button></a>
-                </div>
-                <img src="./img/img-cozinha.jpg" alt="imagem-cozinha" class="img-banner">
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+            <div class="escondido">
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
             </div>
-        </section>
-        <section id="section-2">
-            <h1>Quem somos</h1>
-            <div class="container-text-2">
-                <div class="text-nos">
-                    <h6>Nossa História</h6>
-                    <p>A LIZ PLANEJADOS é uma empresa com anos de experiência no mercado de móveis sob medida.
-                        Dedicamo-nos
-                        a
-                        criar soluções personalizadas que atendam às necessidades de cada cliente.</p>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
                 </div>
-                <div class="text-nos">
-                    <h6>Nossa Missão</h6>
-                    <p>Nosso objetivo é transformar espaços em ambientes funcionais e elegantes, através de um
-                        atendimento
-                        personalizado e soluções inovadoras.</p>
-                </div>
-                <div class="text-nos">
-                    <h6>Nossos Valores</h6>
-                    <p>Qualidade, criatividade, comprometimento e excelência no atendimento são os pilares que norteiam
-                        nosso trabalho.</p>
-                </div>
-            </div>
-        </section>
-        <section id="section-3">
-            <div class="container-fundo">
-                <h1>Nossos Serviços</h1>
-                <div class="container-text-3">
-                    <div class="container-text-4">
-                        <div>
-                            <h6>Móveis Planejados</h6>
-                            <p>Criamos soluções sob medida para cozinhas, dormitórios, escritórios e demais ambientes da
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">INÍCIO</a></li>
+                        <li><a href="#sobre">SOBRE NÓS</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="#projetos">PROJETOS</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+
+    </header><!--header-->
+
+    <main>
+        <section id="inicio" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>LIZ PLANEJADOS<span>.</span></h1>
+                        <p>Transforme seu espaço em ambientes funcionais e personalizados com <br>
+                            nossos
+                            móveis planejados.
+                        </p>
+                        <a href="#servicos" class="btn-servico"><button>Conheça nossos serviços</button></a>
+                        <a href="#contato" class="btn-contato"><button>Entre em contato</button></a>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="./img/img-cozinha.jpg" alt="Foto cozinha cinza e madeirado">
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <h2>QUEM SOMOS<span>.</span></h2>
+                <div class="flex">
+                    <div class="sobre-box">
+                        <h4>Nossa História</h4>
+                        <p>A LIZ PLANEJADOS é uma empresa com anos de experiência no mercado de móveis sob medida.
+                            Dedicamo-nos a criar soluções personalizadas que atendam às necessidades de cada cliente.
+                        </p>
+                    </div><!--sobre-box-->
+                    <div class="sobre-box">
+                        <h4>Nossa Missão</h4>
+                        <p>Nosso objetivo é transformar espaços em ambientes funcionais e elegantes, através de um
+                            atendimento
+                            personalizado e soluções inovadoras.</p>
+                    </div><!--sobre-box-->
+                    <div class="sobre-box">
+                        <h4>Nossos Valores</h4>
+                        <p>Qualidade, criatividade, comprometimento e excelência no atendimento são os pilares que
+                            norteiam nosso trabalho.
+                        </p>
+                    </div><!--sobre-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+        <section id="servicos" class="servicos">
+            <div class="interface">
+                <h2>NOSSOS <span>SERVIÇOS.</span></h2>
+                <div class="flex">
+                    <div class="flex">
+                        <div class="txt-servicos">
+                            <h4>Móveis Planejados</h4>
+                            <p>Criamos soluções sob medida para cozinhas, dormitórios, escritórios e demais
+                                ambientes da
                                 sua
                                 casa.</p>
                         </div>
-                        <div>
-                            <h6>Instalação Profissional</h6>
+                        <div class="txt-servicos">
+                            <h4>Instalação Profissional</h4>
                             <p>Contamos com uma equipe treinada para a instalação de seus móveis com excelência.</p>
                         </div>
                     </div>
-                    <div class="container-text-4">
-                        <div>
-                            <h6>Orçamento</h6>
+                    <div class="flex">
+                        <div class="txt-servicos">
+                            <h4>Orçamento</h4>
                             <p>Orçamento sem compromisso, zero taxa de orçamento.</p>
                         </div>
-                        <div>
-                            <h6>Pós-Venda</h6>
+                        <div class="txt-servicos">
+                            <h4>Pós-Venda</h4>
                             <p>Oferecemos suporte e assessoria técnica mesmo após a conclusão do projeto.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-4">
-            <h1>Móveis Planejados para Cozinha</h1>
-            <div class="container-text-5">
-                <div>
-                    <div class="container-text-6">
-                        <h6>Funcionalidade</h6>
-                        <p>Nossos projetos de cozinha são desenvolvidos para maximizar o espaço e a praticidade do dia a
-                            dia.</p>
-                    </div>
-                    <div class="container-text-6">
-                        <h6>Materiais de Qualidade</h6>
-                        <p>Utilizamos apenas materiais de primeira linha para garantir a durabilidade e o acabamento
-                            impecável.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="container-text-6">
-                        <h6>Design Personalizado</h6>
-                        <p>Criamos layouts exclusivos que se adaptam perfeitamente ao seu estilo e necessidades.</p>
-                    </div>
-                    <div class="container-text-6">
-                        <h6>Consultoria Especializada</h6>
-                        <p>Nossos designers fornecem orientação durante todo o processo, desde o projeto até a
-                            instalação.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-5">
-            <h1>Móveis Planejados para Dormitório</h1>
-            <div class="container-text-7">
-                <div class="container-text-8">
-                    <h6>Armários Planejados</h6>
-                    <p>Desenvolvemos armários e closets personalizados para maximizar o espaço e a organização.</p>
-                </div>
-                <div class="container-text-8">
-                    <h6>Camas e Cabeceiras</h6>
-                    <p>Criamos designs exclusivos de camas e cabeceiras que refletem seu estilo pessoal.</p>
-                </div>
-                <div class="container-text-8">
-                    <h6>Penteadeiras e Cômodas</h6>
-                    <p>Nossos móveis para o quarto são projetados para combinar elegância e funcionalidade.</p>
-                </div>
-            </div>
-        </section>
-        <section id="section-6">
-            <img src="./img/img-escritorio.jpg" alt="foto-escritorio" class="img-escritorio">
-            <div class="container-text-9">
-                <h1>Móveis Planejados para Escritório </h1>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--servicos-->
+        <section class="servicos-cozinha">
+            <div class="interface">
+                <h2>MÓVEIS PLANEJADOS PARA <span>COZINHA.</span></h2>
+                <div class="flex">
+                    <div class="flex">
+                        <div class="shadow">
+                            <h4>Funcionalidade</h4>
+                            <p>Nossos projetos de cozinha são desenvolvidos para maximizar o espaço e a praticidade do
+                                dia a
+                                dia.</p>
+                        </div>
+                        <div class="shadow">
+                            <h4>Consultoria Especializada</h4>
+                            <p>Nossos designers fornecem orientação durante todo o processo, desde o projeto até a
+                                instalação.</p>
+                        </div>
 
-                <ul>
-                    <li>Soluções de Escritório sob Medida</li>
-                    <p>Projetamos móveis planejados para criar ambientes de trabalho eficientes e organizados, com
-                        espaço de armazenamento e layout personalizado.</p>
-                    <li>Móveis de Alta Qualidade</li>
-                    <p>Utilizamos materiais resistentes e de alta durabilidade, garantindo a funcionalidade e o design
-                        diferenciado de nossos móveis</p>
-                    <li>Consultoria Especializada</li>
-                    </li>
-                    <p>Nossos designers trabalham em conjunto com você para entender suas necessidades e criar a solução
-                        ideal para o seu escritório.</p>
-                </ul>
-            </div>
-        </section>
-        <section id="section-7">
-            <div class="container-text-10">
-                <h1 class="text-contato">Entre em Contato</h1>
-                <div class="contato">
-                    <div>
-                        <img src="./img/phone.svg" alt="Telefone" class="icons">
-                        <h1>Telefone</h1>
+                    </div><!--flex-->
+                    <div class="flex">
+                        <div class="shadow">
+                            <h4>Materiais de Qualidade</h4>
+                            <p>Utilizamos apenas materiais de primeira linha para garantir a durabilidade e o acabamento
+                                impecável.</p>
+                        </div>
+                        <div class="shadow">
+                            <h4>Design Personalizado</h4>
+                            <p>Criamos layouts exclusivos que se adaptam perfeitamente ao seu estilo e necessidades.</p>
+                        </div>
+
+                    </div><!--flex-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--servicos-cozinha-->
+        <section class="servicos-quarto">
+            <div class="interface">
+                <h2>MÓVEIS PLANEJADOS PARA <span>DORMITÓRIOS.</span></h2>
+                <div class="flex">
+                    <div class="txt-servicos-quarto">
+                        <h4>Armários Planejados</h4>
+                        <p>Desenvolvemos armários e closets personalizados para maximizar o espaço e a organização.</p>
+                    </div>
+                    <div class="txt-servicos-quarto">
+                        <h4>Camas e Cabeceiras</h4>
+                        <p>Criamos designs exclusivos de camas e cabeceiras que refletem seu estilo pessoal.</p>
+                    </div>
+                    <div class="txt-servicos-quarto">
+                        <h4>Penteadeiras e Cômodas</h4>
+                        <p>Nossos móveis para o quarto são projetados para combinar elegância e funcionalidade.</p>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--servicos-quarto-->
+        <section class="servicos-escritorio">
+            <div class="interface">
+                <div class="flex">
+                    <img src="./img/img-escritorio.jpg" alt="foto-escritorio" class="img-escritorio">
+                    <div class="txt-escritorio">
+                        <h2>MÓVEIS PLANEJADOS PARA <span>ESCRITÓRIO.</span> </h2>
+
+                        <ul>
+                            <li>Soluções de Escritório sob Medida</li>
+                            <p>Projetamos móveis planejados para criar ambientes de trabalho eficientes e organizados,
+                                com
+                                espaço de armazenamento e layout personalizado.</p>
+                            <li>Móveis de Alta Qualidade</li>
+                            <p>Utilizamos materiais resistentes e de alta durabilidade, garantindo a funcionalidade e o
+                                design
+                                diferenciado de nossos móveis</p>
+                            <li>Consultoria Especializada</li>
+                            </li>
+                            <p>Nossos designers trabalham em conjunto com você para entender suas necessidades e criar a
+                                solução
+                                ideal para o seu escritório.</p>
+                        </ul>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--servicos-escritorio-->
+        <section class="projetos">
+            <div class="interface">
+                <h2>MEUS <span>PROJETOS.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(img/1.jpg);"></div>
+                    <div class="img-port" style="background-image: url(img/3.jpg);"></div>
+                    <div class="img-port" style="background-image: url(img/5.jpg);"></div>
+                    <div class="img-port" style="background-image: url(img/6.jpg);"></div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--projetos-->
+        <section id="contato" class="contato">
+            <div class="interface">
+                <h2 class="text-contato">Entre em Contato</h2>
+                <div class="flex">
+                    <div class="txt-contato">
+                        <i class="bi bi-telephone"></i>
+                        <h2>Telefone</h2>
                         <p>(32) 99151-5740</p>
                         <p>(32) 98455-8492</p>
                     </div>
-                    <div>
-                        <img src="./img/email.svg" alt="Email" class="icons">
-                        <h1>E-mail</h1>
+                    <div class="txt-contato">
+                        <i class="bi bi-envelope"></i>
+                        <h2>E-mail</h2>
                         <p>lizplanejadosjf@gmail.com</p>
                     </div>
-                    <div>
-                        <img src="./img/endereco.svg" alt="localização" class="icons">
-                        <h1>Endereço</h1>
+                    <div class="txt-contato">
+                        <i class="bi bi-geo-alt"></i>
+                        <h2>Endereço</h2>
                         <p>Rua Agostinho Brolhiato, 30 - Benfica, Juiz de Fora - MG</p>
                     </div>
-                    <div>
-                        <img src="./img/relogio.svg" alt="Horário de Funcionamento" class="icons">
-                        <h1>Horário de Atendimento</h1>
+                    <div class="txt-contato">
+                        <i class="bi bi-stopwatch"></i>
+                        <h2>Horário de Atendimento</h2>
                         <p>Segunda a quinta-feira, 9h às 17h</p>
                         <p>Sexta-feira, 9h às 12h</p>
                     </div>
                 </div>
             </div>
+        </section><!--contato-->
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="title-form">Contato Fácil</h2>
+                <form action="https://formcarry.com/s/kNMmY_aBNAx" method="POST" enctype="multipart/form-data">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nomeid" placeholder="Digite seu nome aqui!" required name="nome" />
 
-            <form 
-            action="https://formcarry.com/s/kNMmY_aBNAx" 
-            method="POST" 
-            enctype="multipart/form-data">
+                    <label for="fone">Telefone:</label>
+                    <input type="tel" id="foneid" name="telefone" placeholder="(32) 99151-5740" required name="fone" />
 
-            <h1 class="title-form">Contato Fácil</h1>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nomeid" placeholder="Digite seu nome aqui!" required="required" name="nome" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="emailid" name="email" placeholder="fulano@mail.com" name="email" required />
 
-            <label for="fone">Telefone:</label>
-            <input type="tel" id="foneid" name="telefone"  placeholder="(32) 99151-5740" required="required" name="fone" />
+                    <label for="textarea">Envie sua mensagem:</label>
+                    <textarea placeholder="Deixe sua opnião" id="textid" name="mensagem" required></textarea>
 
-            <label for="email">Email:</label>
-            <input type="email" id="emailid" name="email" placeholder="fulano@mail.com" name="email" />
+                    <div class="btn-enviar"><input type="submit" class="enviar" onclick="Enviar();" value="Enviar" /></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
 
-            <label for="textarea">Envie sua mensagem:</label>
-            <textarea placeholder="Deixe sua opnião" id="textid" name="mensagem" required="required"></textarea>
+    <footer>
+        <h6>Desenvolvido com ❤ por Thiago Quetz</h6>
+    </footer>
 
-            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-            </form>
-
-        </section>
-        <footer>
-            <h6>Desenvolvido com ❤ por Thiago Quetz</h6>
-        </footer>
-
+    <div class="icon">
         <a href="https://api.whatsapp.com/send?phone=5532991515740&text=Ol%C3%A1,%20tudo%20bem%3F%20Estou%20precisando%20de%20um%20or%C3%A7amento."
             target="_blank"><img src="./img/whatsicon.png" alt="Icone-whatsapp-abrir" class="icone-whatsapp"></a>
         <a href="https://www.instagram.com/liz_planejados?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><img
                 src="./img/instagram-icone.png" alt="icone-instagram" class="icone-instagram"></a>
-    </main>
-    <script src="./script.js"></script>
+    </div>
+
 </body>
 
 </html>
