@@ -578,10 +578,25 @@ footer {
         font-size: 22px;
      }
 
+     
+     /* SERVICOS ESCRITORIO */
+     section.servicos-escritorio{
+       padding: 40px 8%;
+     }
+
+    section.servicos-escritorio img{
+       width: 100%;
+     }
+
+     section.servicos-escritorio .flex{
+        flex-direction: column-reverse;
+      }
+
     /* PROJETOS */
 
     section.projetos {
         padding: 80px 8%;
+      
     }
 
     .img-port {
